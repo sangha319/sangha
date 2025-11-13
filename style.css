@@ -1,54 +1,76 @@
-body {
-  background-color: #cfd4f7;
-  font-family: 'Pretendard', sans-serif;
-  margin: 0;
-  padding: 0;
-}
+@media (max-width: 480px) {
+  .chat-container {
+    background-color: #cfd4f7; /* 연보라 POP 배경 */
+    padding: 8px 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 20px; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  }
 
-.chat-container {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 20px 16px 80px;
-}
+  .chat-row {
+    flex-direction: row; /* 기본은 이미 row지만 필요시 유지 */
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
 
-.message {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 16px;
-}
+  .chat-profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 6px;
+    flex-shrink: 0;
+  }
 
-.profile {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
+  .chat-content { 
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .chat-bubble {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 12px;
+    border-radius: 18px; /* 완전 둥글게 */
+    max-width: 75%; /* 모바일에서는 조금 더 넓게 */
+    font-size: 13px; /* 글자 조금 키워도 가독성 좋음 */
+    line-height: 1.5;
+    width: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    display: inline-block;
+  }
 
-.bubble-group {
-  max-width: 70%;
-}
-
-.name {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 4px;
-}
-
-.bubble {
-  background-color: #fff;
-  color: #000;
-  padding: 10px 14px;
-  border-radius: 18px;
-  border-top-left-radius: 4px;
-  margin-bottom: 6px;
-  display: inline-block;
-  line-height: 1.5;
-  word-break: keep-all;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-}
-
-.time {
-  font-size: 11px;
-  color: #999;
-  margin-top: 4px;
+  .chat-date {
+    text-align: center;
+    color: #D3D3D3;
+    font-size: 12px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    color: #333;
+    padding: 7px 7px;
+    border-radius: 18px; /* 완전 둥글게 */
+    opacity: 40%;
+    line-height: 0;
+    display: flex;
+    text-align: center;
+    max-width: 60%; /* 모바일에서 날짜 박스 더 넓게 */
+  }
+  
+  .chat-header { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 4px; 
+  }
+  
+  .chat-name { 
+    font-weight: bold; 
+    color: #4a4a6a; 
+    font-size: 13px; 
+    margin-right: 6px; 
+  }
+  
+  .chat-time { 
+    color: #8588a6; 
+    font-size: 12px; 
+  }
 }
