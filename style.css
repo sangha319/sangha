@@ -65,14 +65,13 @@ body {
 }
 
 .chat-date {
-  text-align: center;
+  display: inline-block;       /* 텍스트 길이에 딱 맞게 */
+  background-color: #fff;      /* 배경색 */
+  color: #333;                 /* 텍스트 색 */
+  padding: 7px 14px;           /* 위아래, 좌우 패딩 */
+  border-radius: 18px;         /* 완전 둥글게 */
+  opacity: 0.4;                /* 반투명 */
+  text-align: center;          /* 텍스트 중앙 정렬 */
   font-size: 12px;
-  margin: 20px auto;
-  background-color: #fff;
-  color: #333;
-  padding: 7px 14px;
-  border-radius: 18px; /* 완전 둥글게 */
-  opacity: 0.4;
-  display: inline-block;
-  max-width: 60%; /* 모바일에서 날짜 박스 넓이 */
+  margin: 20px auto;           /* 위아래 여백 + 수평 가운데 정렬 */
 }
