@@ -71,7 +71,7 @@ body {
   padding: 7px 14px;           /* 위아래, 좌우 패딩 */
   border-radius: 18px;         /* 완전 둥글게 */
   opacity: 0.4;                /* 반투명 */
-  text-align: center;          /* 텍스트 중앙 정렬 */
   font-size: 12px;
-  margin: 20px auto;           /* 위아래 여백 + 수평 가운데 정렬 */
+  text-align: center;          /* 텍스트 중앙 정렬 */
+  margin: 20px auto;           /* 수평 중앙 정렬 */
 }
