@@ -54,3 +54,19 @@ body {
   color: #999;
   margin-top: 4px;
 }
+
+.chat-date {
+    text-align: center;
+    color: #D3D3D3;
+    font-size: 12px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    color: #333;
+    padding: 7px 7px;
+    border-radius: 18px; /* 완전 둥글게 */
+    opacity: 40%;
+    line-height: 0;
+    display: flex;
+    text-align: center;
+    max-width: 60%; /* 모바일에서 날짜 박스 더 넓게 */
+  }
