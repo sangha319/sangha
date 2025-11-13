@@ -54,10 +54,7 @@ body {
 .bubble {
   background-color: #fff;
   color: #000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 4px 6px; 
   border-radius: 18px;       /* 완전 둥글게 */
   margin-bottom: 6px;
   display: inline-block;
@@ -65,6 +62,7 @@ body {
   word-break: break-word;     /* 줄바꿈 */
   overflow-wrap: break-word;  /* 모바일 대응 */
   overflow: hidden;           /* 완전 둥근 모서리 보장 */
+  white-space: pre-line;
 }
 
 .chat-date {
