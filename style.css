@@ -41,7 +41,6 @@ body {
   color: #000;
   padding: 10px 14px;
   border-radius: 18px; /* 완전 둥글게 */
-  border-top-left-radius: 4px;
   margin-bottom: 6px;
   display: inline-block;
   line-height: 1.5;
@@ -51,7 +50,6 @@ body {
 .time {
   font-size: 11px;
   color: #999;
-  margin-top: 4px;
 }
 
 .chat-date {
