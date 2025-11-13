@@ -54,6 +54,7 @@ body {
 .bubble {
   background-color: #fff;
   color: #000;
+  font-size: 14px;
   padding: 4px 6px; 
   border-radius: 18px;       /* 완전 둥글게 */
   margin-bottom: 6px;
