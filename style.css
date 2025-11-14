@@ -39,15 +39,16 @@ h1 {
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 16px 80px; /* 상단 패딩 줄임 */
+  padding: 10px 16px 80px;
   box-sizing: border-box;
 }
 
-
+/* 개별 메시지 */
 .message {
   display: flex;
   align-items: flex-start;
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .profile {
@@ -58,11 +59,10 @@ h1 {
   flex-shrink: 0;
 }
 
-
 .header {
   display: flex;
   align-items: baseline;
-  gap: 8px; /* 이름과 시간 간격 */
+  gap: 8px;
   margin-bottom: 4px;
 }
 
@@ -77,13 +77,15 @@ h1 {
   color: #999;
 }
 
+/* 💜 말풍선 크기가 글자수만큼 줄어드는 반응형 핵심 */
 .bubble-group {
-  width: fit-content;   
-  max-width: 70%;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  max-width: 70%;
+  width: auto;         /* fit-content 제거 → 문제 해결 */
 }
 
+/* 말풍선 */
 .bubble {
   background-color: #fff;
   color: #000;
@@ -99,18 +101,31 @@ h1 {
   margin-top: 6px;
 }
 
+/* 날짜 */
 .chat-date {
-  display: block;       
+  display: block;
   width: fit-content;
-  background-color: #fff;      /* 배경색 */
-  color: #000;                 /* 텍스트 색 */
-  padding: 7px 14px;           /* 위아래, 좌우 패딩 */
-  border-radius: 18px;         /* 완전 둥글게 */
-  opacity: 0.4;                /* 반투명 */
+  background-color: #fff;
+  color: #000;
+  padding: 7px 14px;
+  border-radius: 18px;
+  opacity: 0.4;
   font-size: 12px;
-  text-align: center;          /* 텍스트 중앙 정렬 */
-  margin: 20px auto;           /* 수평 중앙 정렬 */
+  text-align: center;
+  margin: 20px auto;
 }
+
+/* 📱 모바일 반응형 */
+@media (max-width: 480px) {
+  .bubble-group {
+    max-width: 80%;       /* 너무 좁아지는 것 방지 */
+  }
+
+  .bubble {
+    min-width: 40px;      /* “응”, “아” 같은 말풍선 깨지는 문제 방지 */
+  }
+}
+
 .hidden {
   display: none;
 }
