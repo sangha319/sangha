@@ -4,333 +4,312 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SANGHA Archive</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-<!-- 첫 화면 → 시작 버튼 -->
+
+<!-- =========================
+     첫 화면: 연도 선택
+========================= -->
 <div id="start-screen">
-  <button id="open-chat">상하 아카이브 보기</button>
+  <h2>연도 선택</h2>
+  <button class="year-btn" data-year="2024">2024년</button>
+  <button class="year-btn" data-year="2025">2025년</button>
 </div>
 
-<!-- 채팅 화면 -->
+<!-- =========================
+     날짜 선택 화면
+========================= -->
+<div id="date-screen" class="hidden">
+  <h2 id="selected-year"></h2>
+  <div id="date-buttons"></div>
+  <button id="back-to-year">뒤로가기</button>
+</div>
+
+<!-- =========================
+     채팅 화면
+========================= -->
 <div id="chat-screen" class="hidden">
-  <div class="chat-container">
-    <div class="date-separator">2024년 8월 1일 목요일</div>
+  <button id="back-to-date">뒤로가기</button>
   <div class="chat-container">
 
-    <!-- 하루 날짜 -->
+    <!-- 날짜 표시 -->
     <div class="chat-date">2024년 8월 1일 목요일</div>
 
-    <!-- 메시지 1 -->
+    <!-- =========================
+         메시지 전체 1~27
+    ========================== -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:38</span>
-        </div>
-        <div class="bubble">안녕~ 상하입니다! 여러분과 더 가까이 소통할 수 있게 되어서 기쁘네요😉 앞으로 우리 좋은 시간 만들어 나아가요🤲🏻 최고의 하루를 만들어 줄 순 없겠지만, 조금 더 나은 하루를 만들어 주고 싶어요👀✌
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:38</span></div>
+        <div class="bubble">안녕~ 상하입니다! 여러분과 더 가까이 소통할 수 있게 되어서 기쁘네요😉 앞으로 우리 좋은 시간 만들어 나아가요🤲🏻 최고의 하루를 만들어 줄 순 없겠지만, 조금 더 나은 하루를 만들어 주고 싶어요👀✌</div>
       </div>
     </div>
 
-    <!-- 메시지 2 -->
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:43</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:43</span></div>
         <div class="bubble">신기해..😗</div>
-      </div>  
+      </div>
     </div>
 
-    <!-- 메시지 3 -->
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:45</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:45</span></div>
         <div class="bubble">제가 배경색을 바꾸면 여러분도 바뀌는 건가용?</div>
         <div class="bubble">나는 무슨색 하지</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 4 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:46</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:46</span></div>
         <div class="bubble">러블리함;ㅋㅋ</div>
-      </div>  
+      </div>
     </div>
 
-    <!-- 메시지 5 -->
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:49</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:49</span></div>
         <div class="bubble">앞으로 너무너무 재밌을 것 같아요~ 신난다🚨✌💥❤️</div>
-      </div>  
+      </div>
     </div>
 
-    <!-- 메시지 6 -->
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:50</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:50</span></div>
         <div class="bubble">베이스</div>
         <div class="bubble">베이스 어때? 새로운 기능을 발견함✌</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 7 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:51</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:51</span></div>
         <div class="bubble">베이스 밥먹었어? 뭐먹었어 궁금해</div>
-      </div>  
-    </div>    
-    <!-- 메시지 8 -->
+      </div>
+    </div>
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 12:54</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:54</span></div>
         <div class="bubble">나는 아직 못먹었는데 이따 먹어야지...</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 9 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:16</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:16</span></div>
         <div class="bubble">다시 등장👀</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 10 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:26</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:26</span></div>
         <div class="bubble">모해</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 11 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:28</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:28</span></div>
         <div class="bubble">나는 비밀이야</div>
-      </div>  
-    </div> 
-    <!-- 메시지 12 -->
+      </div>
+    </div>
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:42</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:42</span></div>
         <div class="bubble">제가 요즘 요아정 중독에 걸려서...</div>
         <div class="bubble">자몽과 꿀이랑 먹는 거에 푹 빠져서...</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 13 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:43</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:43</span></div>
         <div class="bubble">포케에 빠져서...</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 14 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:44</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:44</span></div>
         <div class="bubble">하이디라오는 너무 가고싶은데 살을 빼야하니까...</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 15 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:45</span>
-        </div>
-        <div class="bubble">나름 다이어트 식단 포케+요아정<br>
-        이유 : 요거트+과일=>살안찜~; 완전 건강해~;
-        포케 => 야채랑 소량의 현미밥이라 너무 다이어트야... 진짜;🤦🏻✌🏻</div>
-      </div>  
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:45</span></div>
+        <div class="bubble">나름 다이어트 식단 포케+요아정<br>이유 : 요거트+과일=>살안찜~; 완전 건강해~;<br>포케 => 야채랑 소량의 현미밥이라 너무 다이어트야... 진짜;🤦🏻✌🏻</div>
+      </div>
     </div>
-    <!-- 메시지 16 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:48</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:48</span></div>
         <div class="bubble">그래도 잘 챙겨먹고 있어용🤢ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ다들 진정해~🙌🏻</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 17 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:45</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:45</span></div>
         <div class="bubble">저번주에 마라엽떡을 먹었는데 준호랑 자꾸 생각나 뭔지 알죠</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 18 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 1:51</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 1:51</span></div>
         <div class="bubble">조만간 혼내줄 음식들이 너무 많아🤦🏻🧨💣💥🚨</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 19 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 2:01</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 2:01</span></div>
         <div class="bubble">답장 보는 재미가 쏠쏠해😗</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 20 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 2:03</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 2:03</span></div>
         <div class="bubble">귀엽군</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 21 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 2:04</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 2:04</span></div>
         <div class="bubble">최근에 음방 때 영상들을 다시 봤어요 추억여행 ㅋㅋㅋㅋㅋ</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 22 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 7:38</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 7:38</span></div>
         <div class="bubble">베이스 밥 먹었어?</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 23 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 7:40</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 7:40</span></div>
         <div class="bubble">나는 도의랑 스쿨프드 먹었어 + 컵라면 배불러🤢💥</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 24 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 7:41</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 7:41</span></div>
         <div class="bubble">나는 버터장조림밥이랑 중독매콤만두? 그거랑 열라면 작은컵😗</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 25 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 7:42</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 7:42</span></div>
         <div class="bubble">아니 열라면이 아니라 틈새라면👀💦</div>
         <div class="bubble">안맵던데? 애기들이네 ㅋ</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 26 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 7:45</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 7:45</span></div>
         <div class="bubble">푸하학</div>
-      </div>  
+      </div>
     </div>
-    <!-- 메시지 27 -->
+
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header">
-          <span class="name">SANGHA</span>
-          <span class="time">오후 8:02</span>
-        </div>
+        <div class="header"><span class="name">SANGHA</span><span class="time">오후 8:02</span></div>
         <div class="bubble">다들 모해용</div>
-      </div>  
-    </div>    
+      </div>
+    </div>
+
   </div>
-    <script src="script.js"></script>
+</div>
+
+<script>
+  // 화면 요소
+  const startScreen = document.getElementById('start-screen');
+  const dateScreen = document.getElementById('date-screen');
+  const chatScreen = document.getElementById('chat-screen');
+  const dateButtons = document.getElementById('date-buttons');
+  const selectedYear = document.getElementById('selected-year');
+
+  const backToYear = document.getElementById('back-to-year');
+  const backToDate = document.getElementById('back-to-date');
+
+  // 예시 데이터: 연도별 날짜
+  const archiveData = {
+    "2024": ["8월 1일"],
+    "2025": ["1월 1일"]
+  };
+
+  // 연도 선택
+  document.querySelectorAll('.year-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const year = btn.dataset.year;
+      startScreen.classList.add('hidden');
+      dateScreen.classList.remove('hidden');
+      selectedYear.textContent = year + "년";
+      dateButtons.innerHTML = "";
+      archiveData[year].forEach(date => {
+        const dBtn = document.createElement('button');
+        dBtn.textContent = date;
+        dBtn.addEventListener('click', () => {
+          dateScreen.classList.add('hidden');
+          chatScreen.classList.remove('hidden');
+        });
+        dateButtons.appendChild(dBtn);
+      });
+    });
+  });
+
+  backToYear.addEventListener('click', () => {
+    dateScreen.classList.add('hidden');
+    startScreen.classList.remove('hidden');
+  });
+
+  backToDate.addEventListener('click', () => {
+    chatScreen.classList.add('hidden');
+    dateScreen.classList.remove('hidden');
+  });
+</script>
+
 </body>
 </html>
