@@ -64,6 +64,7 @@ body {
   overflow: hidden;
   white-space: pre-line; /* 줄바꿈 유지 */
   vertical-align: top;   /* inline-block 위쪽 들뜸 방지 */
+  margin-top: 6px;
 }
 
 
