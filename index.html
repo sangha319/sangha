@@ -3,47 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SANGHA</title>
+  <title>SANGHA Archive</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- =========================
-     첫 화면: 연도 선택
-========================= -->
+<!-- 1. 첫 화면: 연도 선택 -->
 <div id="start-screen">
-  <h2>연도 선택</h2>
+  <h2>연도를 선택하세요</h2>
   <button class="year-btn" data-year="2024">2024년</button>
   <button class="year-btn" data-year="2025">2025년</button>
 </div>
 
-<!-- =========================
-     날짜 선택 화면
-========================= -->
+<!-- 2. 날짜 선택 화면 -->
 <div id="date-screen" class="hidden">
-  <h2 id="selected-year"></h2>
+  <h2 id="year-title">연도</h2>
   <div id="date-buttons"></div>
-  <button id="back-to-year">뒤로가기</button>
+  <button id="back-year">뒤로</button>
 </div>
 
-<!-- =========================
-     채팅 화면
-========================= -->
+<!-- 3. 채팅 화면 -->
 <div id="chat-screen" class="hidden">
-  <button id="back-to-date">뒤로가기</button>
-  <div class="chat-container">
-
-    <!-- 날짜 표시 -->
+  <button id="back-date">뒤로</button>
+  
+  <!-- 8월 1일 채팅 -->
+  <div class="chat-container hidden" id="chat-2024-08-01">
     <div class="chat-date">2024년 8월 1일 목요일</div>
-
-    <!-- =========================
-         메시지 전체 1~27
-    ========================== -->
-
-    <div class="message idol">
+  <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:38</span></div>
+        <div class="header">
+        <span class="name">SANGHA</span>
+        <span class="time">오후 12:38</span>
+        </div>
         <div class="bubble">안녕~ 상하입니다! 여러분과 더 가까이 소통할 수 있게 되어서 기쁘네요😉 앞으로 우리 좋은 시간 만들어 나아가요🤲🏻 최고의 하루를 만들어 줄 순 없겠지만, 조금 더 나은 하루를 만들어 주고 싶어요👀✌</div>
       </div>
     </div>
@@ -51,15 +43,20 @@
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:43</span></div>
+        <div class="header">
+        <span class="name">SANGHA</span>
+        <span class="time">오후 12:43</span>
+        </div>
         <div class="bubble">신기해..😗</div>
       </div>
     </div>
-
     <div class="message idol">
       <img src="SANGHA.jpg" alt="SANGHA" class="profile">
       <div class="bubble-group">
-        <div class="header"><span class="name">SANGHA</span><span class="time">오후 12:45</span></div>
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 12:45</span>
+        </div>
         <div class="bubble">제가 배경색을 바꾸면 여러분도 바뀌는 건가용?</div>
         <div class="bubble">나는 무슨색 하지</div>
       </div>
@@ -261,51 +258,70 @@
     </div>
 
   </div>
+
+  <!-- 8월 2일 채팅 예시 -->
+  <div class="chat-container hidden" id="chat-2024-08-02">
+    <div class="chat-date">2024년 8월 2일 금요일</div>
+    <div class="message idol">
+      <img src="SANGHA.jpg" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 12:00</span>
+        </div>
+        <div class="bubble">8월 2일 메시지 예시</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
-  // 화면 요소
   const startScreen = document.getElementById('start-screen');
   const dateScreen = document.getElementById('date-screen');
   const chatScreen = document.getElementById('chat-screen');
-  const dateButtons = document.getElementById('date-buttons');
-  const selectedYear = document.getElementById('selected-year');
+  const dateButtonsDiv = document.getElementById('date-buttons');
+  const yearTitle = document.getElementById('year-title');
 
-  const backToYear = document.getElementById('back-to-year');
-  const backToDate = document.getElementById('back-to-date');
-
-  // 예시 데이터: 연도별 날짜
-  const archiveData = {
-    "2024": ["8월 1일"],
-    "2025": ["1월 1일"]
-  };
-
-  // 연도 선택
+  // 연도 버튼 클릭
   document.querySelectorAll('.year-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const year = btn.dataset.year;
       startScreen.classList.add('hidden');
       dateScreen.classList.remove('hidden');
-      selectedYear.textContent = year + "년";
-      dateButtons.innerHTML = "";
-      archiveData[year].forEach(date => {
-        const dBtn = document.createElement('button');
-        dBtn.textContent = date;
-        dBtn.addEventListener('click', () => {
-          dateScreen.classList.add('hidden');
-          chatScreen.classList.remove('hidden');
+      yearTitle.textContent = year + '년 날짜 선택';
+
+      // 날짜 버튼 생성
+      dateButtonsDiv.innerHTML = '';
+      if(year === '2024') {
+        const dates = ['2024-08-01','2024-08-02'];
+        dates.forEach(d => {
+          const b = document.createElement('button');
+          b.textContent = d.replace(/2024-/,''); // 08-01 형태
+          b.dataset.chat = d;
+          b.addEventListener('click', () => {
+            dateScreen.classList.add('hidden');
+            chatScreen.classList.remove('hidden');
+
+            // 모든 chat 숨기기
+            document.querySelectorAll('.chat-container').forEach(c => c.classList.add('hidden'));
+            // 클릭한 날짜 chat 보여주기
+            document.getElementById('chat-'+b.dataset.chat).classList.remove('hidden');
+          });
+          dateButtonsDiv.appendChild(b);
         });
-        dateButtons.appendChild(dBtn);
-      });
+      }
     });
   });
 
-  backToYear.addEventListener('click', () => {
+  // 뒤로 연도 화면
+  document.getElementById('back-year').addEventListener('click', () => {
     dateScreen.classList.add('hidden');
     startScreen.classList.remove('hidden');
   });
 
-  backToDate.addEventListener('click', () => {
+  // 뒤로 날짜 선택
+  document.getElementById('back-date').addEventListener('click', () => {
     chatScreen.classList.add('hidden');
     dateScreen.classList.remove('hidden');
   });
