@@ -54,16 +54,18 @@ body {
 .bubble {
   background-color: #fff;
   color: #000;
-  font-size: 14px;
-  padding: 8px 6px 8px 6px;
-  border-radius: 18px;       /* 완전 둥글게 */
+  padding: 6px 10px;     /* 여백 줄이기 */
+  border-radius: 18px;
+  font-size: 13px;
   display: inline-block;
-  line-height: 1.5;
-  word-break: break-word;     /* 줄바꿈 */
-  overflow-wrap: break-word;  /* 모바일 대응 */
-  overflow: hidden;           /* 완전 둥근 모서리 보장 */
-  white-space: pre-line;
+  line-height: 1.3;      /* 줄간격 줄여서 위쪽 여백 없앰 */
+  word-break: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  white-space: pre-line; /* 줄바꿈 유지 */
+  vertical-align: top;   /* inline-block 위쪽 들뜸 방지 */
 }
+
 
 .chat-date {
   display: block;       
