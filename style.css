@@ -39,9 +39,10 @@ h1 {
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 16px 80px;
+  padding: 10px 16px 80px; /* 상단 패딩 줄임 */
   box-sizing: border-box;
 }
+
 
 .message {
   display: flex;
