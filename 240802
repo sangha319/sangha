@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANGHA Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+
+    <!-- 하루 날짜 -->
+    <div class="chat-date">2024년 8월 2일 금요일</div>
+
+    <!-- 메시지 1 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오전 11:55</span>
+        </div>
+        <div class="bubble">베이스 오늘 하루도 화이팅🤍</div>
+      </div>
+    </div>
+
+    <!-- 메시지 2 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:08</span>
+        </div>
+        <div class="bubble">벌써 시간이...!</div>
+      </div>  
+    </div>
+
+    <!-- 메시지 3 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:09</span>
+        </div>
+        <div class="bubble">베이스 오늘 어떤 하루를 보냈어? 어떤 하루를 보낼 예정이야?</div>
+      </div>  
+    </div>
+    <!-- 메시지 4 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:30</span>
+        </div>
+        <div class="bubble">내일 주말인데 뭐 할 거예요?👀</div>
+      </div>  
+    </div>
+
+    <!-- 메시지 5 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:48</span>
+        </div>
+        <div class="bubble">저는 비밀인데... 여러분들 답장 다 보고있어요😛</div>
+      </div>  
+    </div>
+
+    <!-- 메시지 6 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:49</span>
+        </div>
+        <div class="bubble">아 내일 뭐하는지가 비밀~~^^ㅎㅎㅎ;;</div>
+      </div>  
+    </div>
+    <!-- 메시지 7 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:55</span>
+        </div>
+        <div class="bubble">정말정말 열심히 사는중😛💦
+        우리 모두 화이팅이다아악!! 악악악!</div>
+      </div>  
+    </div>    
+    <!-- 메시지 8 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:56</span>
+        </div>
+        <div class="bubble">낼 점메추 닭갈비 혹은 매운음식</div>
+      </div>  
+    </div>
+    <!-- 메시지 9 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:57</span>
+        </div>
+        <div class="bubble">너무 매워서 머리가 빡빡이 될 뻔한 적 있는사람... 나 있어... 진짜 매운 오징어볶음 먹고 귀가 안 들렸어~...🤢🚨</div>
+      </div>  
+    </div>
+    <!-- 메시지 10 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 10:59</span>
+        </div>
+        <div class="bubble">그리고 디저트 추천은 케이크~</div>
+      </div>  
+    </div>
+    <!-- 메시지 11 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 11:13</span>
+        </div>
+        <div class="bubble">팬케이크 먹고싶다....</div>
+      </div>  
+    </div> 
+    <!-- 메시지 12 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 11:35</span>
+        </div>
+        <div class="bubble">씻고왔어... 가장 행복한 시간 알지....😇</div>
+      </div>  
+    </div>
+    <!-- 메시지 13 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 11:39</span>
+        </div>
+        <div class="bubble">오노추
+        🎵MIDDLE OF THE NIGHT - 몬스타엑스 선배님<br>갑자기 생각나서 들었는데 연습생 때 생각나서 추억~..🤭</div>
+      </div>  
+    </div>
+    <!-- 메시지 14 -->
+    <div class="message idol">
+      <img src="SANGHA.jpg" alt="SANGHA" class="profile">
+      <div class="bubble-group">
+        <div class="header">
+          <span class="name">SANGHA</span>
+          <span class="time">오후 11:43</span>
+        </div>
+        <div class="bubble">이렇게 소소한 이야기를 할 수 있어서 좋은 것 같아!🙌🏻 ㅋㅋㅋㅋㅋㅋ 앞으로도 자주자주 찾아오겠습니다🙇🏻‍♂️</div>
+      </div>  
+    </div>
+  </div>
+</body>
+</html>
