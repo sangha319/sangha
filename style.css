@@ -80,3 +80,21 @@ body {
   text-align: center;          /* 텍스트 중앙 정렬 */
   margin: 20px auto;           /* 수평 중앙 정렬 */
 }
+.hidden {
+  display: none;
+}
+
+#start-screen {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#open-chat {
+  background-color: #6c73f7;
+  color: #fff;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
