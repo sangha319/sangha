@@ -72,7 +72,7 @@ body {
   display: block;       
   width: fit-content;
   background-color: #fff;      /* 배경색 */
-  color: #333;                 /* 텍스트 색 */
+  color: #000;                 /* 텍스트 색 */
   padding: 7px 14px;           /* 위아래, 좌우 패딩 */
   border-radius: 18px;         /* 완전 둥글게 */
   opacity: 0.4;                /* 반투명 */
