@@ -86,6 +86,8 @@ h1 {
     align-items: flex-end;
     display: flex;
     gap: 6.5px;
+    width: fit-content;
+    max-width: 70%; /* 넘칠 경우만 70% 제한 */
 }
 
 
